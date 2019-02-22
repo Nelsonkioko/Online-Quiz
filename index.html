@@ -9,88 +9,93 @@
     <script src="js/scripts.js"></script>
   </head>
   <body>
+    <div class="sidenav">
+        <br><br><br><br><br><br><br><br><br><br><br>
+        <progress class="progress md-progress" style=height: 20px id="progressbar" value="0" max="100" ></progress>
+        <p id="finalscore"></p>
+    </div>
     <div class="container">
     <div class="jumbotron">
     <h1>Please answer all the questions</h1>
     </div>
   <div class="jumbotron">
   <form id="quiz">
-      <div class="quesone">
+      <div class="quiz1">
         <h3>Q1. Which sign do you use to represent an id in css?</h3>
-        <label><input type="radio" name="quiz1" value="0"> .</label><br>
+        <label><input type="radio" name="quiz1" value="0" required> .</label><br>
         <label><input type="radio" name="quiz1" value="10"> #</label><br>
         <label><input type="radio" name="quiz1" value="0"> $</label><br>
       </div><br>
    </div>
       <div class="jumbotron">
-      <div class="questwo">
+      <div class="quiz2">
         <h3>Q2. What do we call elements that are nested within other elements?</h3>
-        <label><input type="radio" name="quiz2" value="0"> block elements </label><br>
+        <label><input type="radio" name="quiz2" value="0"required> block elements </label><br>
         <label><input type="radio" name="quiz2" value="0"> nested elements</label><br>
         <label><input type="radio" name="quiz2" value="10">inline elements</label><br>
       </div><br>
     </div>
       <div class="jumbotron">
-      <div class="questhree">
+      <div class="quiz3">
         <h3 >Q3. which method do you use to add content to an element from the top and as a child?</h3>
-        <label><input type="radio" name="quiz3" value="10">.prepend()</label><br>
+        <label><input type="radio" name="quiz3" value="10"required>.prepend()</label><br>
         <label><input type="radio" name="quiz3" value="0">.append()</label><br>
         <label><input type="radio" name="quiz3" value="0">.before</label><br>
       </div><br>
       </div>
       <div class="jumbotron">
-      <div class="questhree">
+      <div class="quiz4">
         <h3 >Q4. Which of the following tags is used to make a list with numbers?</h3>
-        <label><input type="radio" name="quiz4" value="0">&lt;ul&gt;</label><br>
+        <label><input type="radio" name="quiz4" value="0"required>&lt;ul&gt;</label><br>
         <label><input type="radio" name="quiz4" value="10">&lt;ol&gt;</label><br>
         <label><input type="radio" name="quiz4" value="0">&lt;br&gt;</label><br>
       </div><br>
       </div>
       <div class="jumbotron">
-      <div class="questhree">
+      <div class="quiz5">
         <h3 >Q5. Which of the following languages is used for back end operations?</h3>
-        <label><input type="radio" name="quiz5" value="0">Python</label><br>
-        <label><input type="radio" name="quiz5" value="10">Css</label><br>
+        <label><input type="radio" name="quiz5" value="10"required>Python</label><br>
+        <label><input type="radio" name="quiz5" value="0">Css</label><br>
         <label><input type="radio" name="quiz5" value="0">HTML</label><br>
       </div><br>
       </div>
       <div class="jumbotron">
-      <div class="questhree">
+      <div class="quiz6">
         <h3 >Q6.Where do we put our css link in html?</h3>
-        <label><input type="radio" name="quiz6" value="10">&lt;head&gt;</label><br>
+        <label><input type="radio" name="quiz6" value="10"required>&lt;head&gt;</label><br>
         <label><input type="radio" name="quiz6" value="0">&lt;body&gt;</label><br>
         <label><input type="radio" name="quiz6" value="0">&lt;title&gt;</label><br>
       </div><br>
       </div>
       <div class="jumbotron">
-      <div class="questhree">
+      <div class="quiz7">
         <h3 >Q7. What will the statement 20>30 evaluate to?</h3>
-        <label><input type="radio" name="quiz7" value="0">True</label><br>
+        <label><input type="radio" name="quiz7" value="0"required>True</label><br>
         <label><input type="radio" name="quiz7" value="10">False</label><br>
         <label><input type="radio" name="quiz7" value="0">Not equaL</label><br>
       </div><br>
       </div>
       <div class="jumbotron">
-      <div class="questhree">
+      <div class="quiz8">
         <h3 >Q8. How do we create a new branch in the terminal?</h3>
-        <label><input type="radio" name="quiz8" value="10">git branch branchname</label><br>
+        <label><input type="radio" name="quiz8" value="10"required>git branch branchname</label><br>
         <label><input type="radio" name="quiz8" value="0">git branchname</label><br>
         <label><input type="radio" name="quiz8" value="0">git checkout branchname</label><br>
       </div><br>
       </div>
       <div class="jumbotron">
-      <div class="questhree">
+      <div class="quiz9">
         <h3 >Q9. Which language do we use to style the appearance of our websites?</h3>
-        <label><input type="radio" name="quiz9" value="0">Javascript</label><br>
+        <label><input type="radio" name="quiz9" value="0"required>Javascript</label><br>
         <label><input type="radio" name="quiz9" value="0">html</label><br>
         <label><input type="radio" name="quiz9" value="10">css</label><br>
       </div><br>
       </div>
       <div class="jumbotron">
-      <div class="questhree">
+      <div class="quiz10">
         <h3 >Q10. Bootstraps was originally created by twitter to act as a template for all their webpages</h3>
-        <label><input type="radio" name="quiz10" value="0">True</label><br>
-        <label><input type="radio" name="quiz10" value="10">False</label><br>
+        <label><input type="radio" name="quiz10" value="10"required>True</label><br>
+        <label><input type="radio" name="quiz10" value="0">False</label><br>
         <label><input type="radio" name="quiz10" value="0">Both</label><br>
       </div><br>
       </div>
@@ -98,7 +103,7 @@
 
     </form>
 
-    <p id="finalscore"></p>
+
 
 
 
