@@ -1,0 +1,11 @@
+body {
+  background-image: url("images/quiz3.jpg");
+  background-size: cover;
+}
+.jumbotron {
+  opacity: 0.7;
+  color:olive;
+}
+.text-danger {
+  text-decoration-color: olive;
+}
