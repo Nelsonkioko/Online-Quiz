@@ -5,7 +5,5 @@ body {
 .jumbotron {
   opacity: 0.7;
   color:olive;
-}
-.text-danger  {
-  text-decoration-color: olive;
+  text-decoration-color: #223300;
 }

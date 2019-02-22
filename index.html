@@ -6,64 +6,78 @@
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
-    <script src="Js/scripts.js"></script>
+    <script src="js/scripts.js"></script>
   </head>
   <body>
     <div class="container">
     <div class="jumbotron">
     <h1>Please answer all the questions</h1>
     </div>
-    <div class="jumbotron">
-    <div class="text-danger">
-    <form class="quiz1" action="index.html" method="post">
+  <div class="jumbotron">
+  <form id="quiz">
+      <div class="quesone">
+        <h3>Q1. Which sign do you use to represent an id in css?</h3>
+        <label><input type="radio" name="quiz1" value="0">.</label><br>
+        <label><input type="radio" name="quiz1" value="10">#</label><br>
+        <label><input type="radio" name="quiz1" value="0">,</label><br>
+      </div><br>
+   </div>
+      <div class="jumbotron">
+      <div class="questwo">
+        <h3>Q2. What do we call elements that are nested within other elements?</h3>
+        <label><input type="radio" name="quiz2" value="0"> block elements </label><br>
+        <label><input type="radio" name="quiz2" value="0"> nested elements</label><br>
+        <label><input type="radio" name="quiz2" value="10">inline elements</label><br>
+      </div><br>
+    </div>
+      <div class="jumbotron">
+      <div class="questhree">
+        <h3 >Q3. which method do you use to add content to an element from the top and as a child?</h3>
+        <label><input type="radio" name="quiz3" value="10">.prepend()</label><br>
+        <label><input type="radio" name="quiz3" value="0">.append()</label><br>
+        <label><input type="radio" name="quiz3" value="0">.before</label><br>
+      </div><br>
+      </div>
+      <div class="jumbotron">
+      <div class="questhree">
+        <h3 >Q4. Which of the following tags is used to make a list with numbers?</h3>
+        <label><input type="radio" name="quiz3" value="0">&lt;ul&gt;</label><br>
+        <label><input type="radio" name="quiz3" value="10">&lt;ol&gt;</label><br>
+        <label><input type="radio" name="quiz3" value="0">&lt;br&gt;</label><br>
+      </div><br>
+      </div>
+      <div class="jumbotron">
+      <div class="questhree">
+        <h3 >Q5. Which of the following languages is used for back end operations?</h3>
+        <label><input type="radio" name="quiz3" value="0">Python</label><br>
+        <label><input type="radio" name="quiz3" value="10">Css</label><br>
+        <label><input type="radio" name="quiz3" value="0">HTML</label><br>
+      </div><br>
+      </div>
+      <div class="jumbotron">
+      <div class="questhree">
+        <h3 >Q6.Where do we put our css link in html?</h3>
+        <label><input type="radio" name="quiz3" value="10">&lt;head&gt;</label><br>
+        <label><input type="radio" name="quiz3" value="0">&lt;body&gt;</label><br>
+        <label><input type="radio" name="quiz3" value="0">&lt;title&gt;</label><br>
+      </div><br>
+      </div>
+      <div class="jumbotron">
+      <div class="questhree">
+        <h3 >Q7. What will the statement 20>30 evaluate to?</h3>
+        <label><input type="radio" name="quiz3" value="0">True</label><br>
+        <label><input type="radio" name="quiz3" value="10">False</label><br>
+        <label><input type="radio" name="quiz3" value="0">Not equaL</label><br>
+      </div><br>
+      </div>
+      <p><input type="button" value="Submit"></p>
 
-    <h3>Q1. Which sign do you use to represent an id in css?</h3>
-
-    <label for="input">
-      <input type="radio" name="radio" class="input" value="0">.
-    </label><br>
-    <label for="input">
-      <input type="radio" name="radio" class="input"value="10">#
-    </label><br>
-    <label for="input">
-      <input type="radio" name="radio" class="input" value="0">$
-    </label>
     </form>
 
-    <form class="quiz2" action="index.html" method="post">
+    <p id="finalscore"></p>
 
-    <h3>Q2. What do we call elements that are nested within other elements?</h3>
 
-    <label for="input">
-      <input type="radio" name="radio" class="input" value="0">Block elements
-        <span class="checkmark"></span>
-    </label><br>
-    <label for="input">
-      <input type="radio" name="radio" class="input" value="0">Nested elements
-    </label><br>
-    <label for="input">
-      <input type="radio" name="radio" class="input" value="10">Inline elements
-    </label>
-    </form>
-    <form class="quiz3" action="index.html" method="post">
 
-    <h3 >Q3. which method do you use to add content to an element from the top and as a child?</h3>
-
-    <label for="input">
-      <input type="radio" name="radio" class="input" value="10">.prepend()
-
-    </label><br>
-    <label for="input">
-      <input type="radio" name="radio" class="input" value="0">.append()
-    </label><br>
-    <label for="input">
-      <input type="radio" name="radio" class="input" value="0">.before()
-    <p id="finalscore"></p>  
-    </label>
-    </form>
-    </div>
-    </div>
-    </div>
-    </label>
-  </body>
+  </div>
+</body>
 </html>
