@@ -1,9 +1,13 @@
 body {
   background-image: url("images/quiz3.jpg");
   background-size: cover;
+  background-attachment: fixed;
 }
 .jumbotron {
-  opacity: 0.7;
+  opacity: 0.8;
   color:olive;
   text-decoration-color: #223300;
+}
+.jumbotron h1 {
+  text-decoration-color: #aa80ff;
 }
