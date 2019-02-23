@@ -22,7 +22,7 @@ body {
   background-color:  #b3ff66; /* Black */
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 20px;
-  opacity: 0.5;
+  opacity: 0.9;
 }
 .container
 {
@@ -31,4 +31,8 @@ body {
 }
 #progressbar  {
   radius:50%;
+}
+img{
+  width: 160px;
+  height: 100px;
 }

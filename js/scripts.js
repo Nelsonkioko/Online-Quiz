@@ -14,6 +14,8 @@ $(document).ready(function(){
         var question10 = parseInt($("input[name='quiz10']:checked").val());
         var total = question1 + question2 + question3 +  question4 +  question5 + question6 + question7 + question8 + question9 + question10;
         document.getElementById('finalscore').innerHTML="you have scored " + total + "%";
+
+
     });
 });
 $(document).ready(function(){
@@ -29,6 +31,13 @@ $(window).scroll(function() {
 
 });
 });
+function validate(){
+  if ($("input[name=gender]").prop("checked")=== False)  {
+    alert("please answer all the questions");
+
+  }
+}
+
 /*
 
 $(document).ready(function(){
