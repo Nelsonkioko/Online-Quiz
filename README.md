@@ -3,11 +3,12 @@
 #### By Nelson Kioko
 #### Neledi ltd
 ## Description
-This is is a website for checking Triangles
-* First it adds two sides and checks if the two sides are less than or equal to the third side.if it evaluates to true then it otputs that the triangle cannot be formed.
-* It then checks if all sides are equal and if they are equal it outputs that the triangle is equilateral.
-* It also checks if two sides are exactly equal and if they are, it outputs that it is an isosceles triangle.
-* finally it checks if the sum of any two sides of the triangle are greater than the third side and none of the sides are equal and it outputs (this is a scalene triangle)
+This is an online quiz
+* You need to answer all the questions to the best of your knowledge
+* Each question has an answer that has 10 marks.Only one out of the three choices will have marks.
+* The site will take the options you have chosen in the radio buttons and add up the marks.
+* the site will then give you your total score that will be displayed on the sidebar.
+* The site also has a progress bar on the sidebar that continues to fill up as you scroll down.
 ## Setup/Installation Requirements
 * atom
 * Chrome
