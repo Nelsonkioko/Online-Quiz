@@ -20,13 +20,15 @@ $(document).ready(function(){
         var total=0;
         var num = 0;
         var arr = [];
+
         for(num=1;num<=10;num+=1) {
         var questions = parseInt($("input[name='quiz' + num]:checked").val());
         arr.push(questions);
+        alert(arr);
         for (var index = 0; index < arr.length; index += 1)
         {
           total += arr[index];
-          alert(arr);
+
         }
 
 }
