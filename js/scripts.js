@@ -1,16 +1,28 @@
 
 $(document).ready(function(){
 $("input[type='button']").click(function(){
+//create an array for storing name ie quiz1 to quiz10
 arr = [];
-for (i = 1; i < 10; i++) {
-query = quiz+i;
+for (i = 1; i <= 10; i++) {
+query = "quiz"+i;
 arr.push(query);
-alert("arr");
-
 }
+//Create an array for storing the checked values
+arr2=[];
+for (var index = 0; index < arr.length; index += 1) {
+var questions = parseInt($("input[name=" + arr[index] + "]:checked").val());
+arr2.push(questions);
+}
+//Do a total of the checked values collected
+var total = 0;
+for (var index = 0; index < arr2.length; index += 1) {
+  total += arr2[index];
+}
+document.getElementById('finalscore').innerHTML="you have scored " + total + "%";
 });
 });
 
+/*
 $(document).ready(function(){
 $("input[type='button']").click(function(){
 var question1 = parseInt($("input[name='quiz1']:checked").val());
@@ -27,15 +39,15 @@ var total = question1 + question2 + question3 +  question4 +  question5 + questi
 document.getElementById('finalscore').innerHTML="you have scored " + total + "%";
 });
 });
-
+*/
 
 
 $(document).ready(function(){
   // scrolldown progress bar
 $(window).scroll(function() {
-  var s = $(window).scrollTop(),
-    d = $(document).height(),
-    c = $(window).height();
+  var s = $(window).scrollTop();
+  var d = $(document).height();
+  var c = $(window).height();
   scrollPercent = (s / (d - c)) * 100;
   var position = scrollPercent;
 
