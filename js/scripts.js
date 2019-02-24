@@ -19,6 +19,10 @@ for (var index = 0; index < arr2.length; index += 1) {
   total += arr2[index];
 }
 document.getElementById('finalscore').innerHTML="you have scored " + total + "%";
+
+if (arr2 === "")  {
+  alert("please answer all the questions");
+}
 });
 });
 
