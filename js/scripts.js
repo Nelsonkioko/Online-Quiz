@@ -50,9 +50,9 @@ $(document).ready(function(){
   // scrolldown progress bar
 $(window).scroll(function() {
   var a = $(window).scrollTop();
-  var b = $(document).height(); 
+  var b = $(document).height();
   var c = $(window).height();
-  scrollPercent = (a / (b - c)) * 100;
+  scrollPercent = (a / (b - c)) * 100; 
   var position = scrollPercent;
 
   $("#progressbar").attr('value', position); //setting the value of the progressbar
