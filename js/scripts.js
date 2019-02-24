@@ -9,16 +9,21 @@ arr.push(query);
 }
 
 //Do a form validation to check if all the questions have been answered
-for (var index = 0; index < arr.length; index += 1) {
-var radio = document.getElementsByName(arr[index]);
-}
-if (radio.checked == null)  {
-  alert("please answer all the questions");
-  document.location.reload();
-  }
-  else {
-    alert("hatukuelewi");
-  }
+var inputs = document.getElementById("quiz").elements;
+   var count  = 0;
+   for (var i = 0; i < inputs.length; i++) {
+       if (inputs[i].type == 'radio' && inputs[i].checked) {
+           count++;
+       }
+   }
+   if(count<10) {
+     alert("please answer all the questions");
+     document.location.reload();
+   }
+   else {
+     alert("Thank you for answering all the questions");
+   }
+
 
 //Create an array for storing the checked values
 arr2=[];
@@ -28,18 +33,18 @@ arr2.push(questions);
 }
 
 
-
 //Do a total of the checked values collected
 var total = 0;
 for (var index = 0; index < arr2.length; index += 1) {
   total += arr2[index];
 }
+
 //Display the total marks
 document.getElementById('finalscore').innerHTML="you have scored " + total + "%";
 
+});
+});
 
-});
-});
 
 $(document).ready(function(){
   // scrolldown progress bar
