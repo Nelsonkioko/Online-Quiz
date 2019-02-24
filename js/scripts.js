@@ -1,33 +1,30 @@
 
 $(document).ready(function(){
 $("input[type='button']").click(function(){
-
+arr = [];
 for (i = 1; i < 10; i++) {
-
-if ( document.quizform.quiz+i.checked ) {
-
-
-          var question1 = parseInt($("input[name='quiz1']:checked").val());
-          var question2 = parseInt($("input[name='quiz2']:checked").val());
-          var question3 = parseInt($("input[name='quiz3']:checked").val());
-          var question4 = parseInt($("input[name='quiz4']:checked").val());
-          var question5 = parseInt($("input[name='quiz5']:checked").val());
-          var question6 = parseInt($("input[name='quiz6']:checked").val());
-          var question7 = parseInt($("input[name='quiz7']:checked").val());
-          var question8 = parseInt($("input[name='quiz8']:checked").val());
-          var question9 = parseInt($("input[name='quiz9']:checked").val());
-          var question10 = parseInt($("input[name='quiz10']:checked").val());
-          var total = question1 + question2 + question3 +  question4 +  question5 + question6 + question7 + question8 + question9 + question10;
-          document.getElementById('finalscore').innerHTML="you have scored " + total + "%";
-
-
+query = quiz+i;
+arr.push(query);
+alert("arr");
 
 }
-else {
-  alert("please answer all the questions");
-break;
-}
-}
+});
+});
+
+$(document).ready(function(){
+$("input[type='button']").click(function(){
+var question1 = parseInt($("input[name='quiz1']:checked").val());
+var question2 = parseInt($("input[name='quiz2']:checked").val());
+var question3 = parseInt($("input[name='quiz3']:checked").val());
+var question4 = parseInt($("input[name='quiz4']:checked").val());
+var question5 = parseInt($("input[name='quiz5']:checked").val());
+var question6 = parseInt($("input[name='quiz6']:checked").val());
+var question7 = parseInt($("input[name='quiz7']:checked").val());
+var question8 = parseInt($("input[name='quiz8']:checked").val());
+var question9 = parseInt($("input[name='quiz9']:checked").val());
+var question10 = parseInt($("input[name='quiz10']:checked").val());
+var total = question1 + question2 + question3 +  question4 +  question5 + question6 + question7 + question8 + question9 + question10;
+document.getElementById('finalscore').innerHTML="you have scored " + total + "%";
 });
 });
 
