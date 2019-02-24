@@ -5,6 +5,7 @@
 ## Description
 This is an online quiz
 * You need to answer all the questions to the best of your knowledge
+* The site checks whether all the questions have been filled before submitting the form.
 * Each question has an answer that has 10 marks.Only one out of the three choices will have marks.
 * The site will take the options you have chosen in the radio buttons and add up the marks.
 * the site will then give you your total score that will be displayed on the sidebar.
