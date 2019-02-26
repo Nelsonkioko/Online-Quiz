@@ -10,7 +10,7 @@ body {
   text-decoration-color: #223300;
 }
 .jumbotron h1 {
-  text-decoration-color: #aa80ff; 
+  text-decoration-color: #aa80ff;
 }
 .sidenav {
   height: 100%; /* Full-height*/
@@ -36,6 +36,9 @@ body {
   width: 80%;
 }
 #submit {
+  text-align: center;
+}
+#retake {
   text-align: center;
 }
 img{
